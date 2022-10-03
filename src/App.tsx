@@ -48,8 +48,8 @@ function App() {
         <div className='bg-red-200 rounded-lg py-2'>
           
             <p>Enter your zipcode here:</p>
-            <input type="text" value={zip} onChange={(newZip)=> {setZip(newZip.target.value)
-                                                                 console.log(zip)}} className='border border-black rounded-md text-opacity-60 text-gray-800 px-1 my-1'/>
+            <input type="text" placeholder='ZipCode' onChange={(newZip)=> {setZip(newZip.target.value)}} 
+                  className='border border-black rounded-md text-opacity-60 text-gray-800 px-1 my-1'/>
             <button title="Submit" onClick={handleSubmit} className='bg-red-600 text-white px-2 rounded-xl mt-1'>Submit</button>
             
         </div>
